@@ -25,7 +25,7 @@ const data = [
     to: "/portfolio",
   },
   {
-    label: "CONATACT",
+    label: "CONTACT",
     to: "/contact",
   },
 ];
@@ -38,10 +38,10 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__container">
         <Link to={"/"} className="navbar__container__logo">
-          <FaLaptopCode size={30}  />
+          <FaLaptopCode size={30} />
         </Link>
       </div>
-      <ul className="navbar__container__menu">
+      <ul className={`navbar__container__menu ${click ? "active" : ""}`}>
         {data.map((item, key) => (
           <li key={key} className="navbar__container__menu__item">
             <Link to={item.to} className="navbar__container__menu__item__links">
@@ -51,7 +51,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="nav-icons" onClick={handleClick}>
-        {click ? <HiX size={30}  />: <FaBars size={30}  />}
+        {click ? <HiX size={30} /> : <FaBars size={30} />}
       </div>
     </nav>
   );
