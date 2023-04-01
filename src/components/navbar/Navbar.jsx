@@ -41,9 +41,9 @@ const Navbar = () => {
           <FaLaptopCode size={30}  />
         </Link>
       </div>
-      <ul className="navbar_container__menu">
+      <ul className="navbar__container__menu">
         {data.map((item, key) => (
-          <li key={key} className="navbar_menu_item">
+          <li key={key} className="navbar__container__menu__item">
             <Link to={item.to} className="navbar_menu_item_links">
               {item.label}
             </Link>
