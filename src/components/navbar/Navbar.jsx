@@ -44,7 +44,7 @@ const Navbar = () => {
       <ul className="navbar__container__menu">
         {data.map((item, key) => (
           <li key={key} className="navbar__container__menu__item">
-            <Link to={item.to} className="navbar_menu_item_links">
+            <Link to={item.to} className="navbar__container__menu__item__links">
               {item.label}
             </Link>
           </li>
