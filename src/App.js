@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import {Routes,Route,useLocation} from 'react-router-dom';
@@ -22,7 +22,7 @@ function App() {
         }
 
       <Navbar/>
-
+      <div className="App__maincontent">
       <Routes>
         <Route index path='/' element={<Home/>}/>
         <Route index path='/about' element={<About/>}/>
@@ -31,7 +31,9 @@ function App() {
         <Route index path='/resume' element={<Resume/>}/>
 
       </Routes>
+      </div>
     </div>
+
   );
 }
 
