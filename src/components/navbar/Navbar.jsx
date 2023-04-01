@@ -51,7 +51,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="nav-icons" onClick={handleClick}>
-        {click ? <HiX size={30} style={{ color: "#fff" }} /> : <FaBars size={30} style={{ color: "#fff" }} />}
+        {click ? <HiX size={30}  />: <FaBars size={30}  />}
       </div>
     </nav>
   );
