@@ -21,8 +21,21 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-
+            animation: typingEffect 2.5s steps(30,end);
         }
     }
 
 }
+
+
+/* Define the keyframes for the animation */
+@keyframes typingEffect {
+    from { width: 0 }
+    to { width: 60% }
+  }
+  
+  /* Apply the animation property to an element */
+  h1 {
+    animation: typingEffect 2.5s steps(30, end);
+  }
+  
