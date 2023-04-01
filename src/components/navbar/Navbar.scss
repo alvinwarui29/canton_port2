@@ -59,7 +59,7 @@
 .nav-icons {
     display: none;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .navbar__container__menu{
         display: flex;
         flex-direction: column;
@@ -70,6 +70,17 @@
         left: -110%;
         opacity: 1;
         transition: all 0.5 ease-in-out;
+
+        &.active{
+            background: #181818;
+            left: 0;
+            opacity: 1;
+        }
+        &__item{
+            border-bottom: 1px solid #282828;
+            margin: 0;
+            padding: 20px 0;
+        }
     }
     .nav-icons{
         display: block;
