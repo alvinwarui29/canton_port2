@@ -59,3 +59,22 @@
 .nav-icons {
     display: none;
 }
+@media screen and (max-width:768px) {
+    .navbar__container__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5 ease-in-out;
+    }
+    .nav-icons{
+        display: block;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+        cursor: pointer;
+    }
+}
