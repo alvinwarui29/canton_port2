@@ -1,7 +1,7 @@
 import './App.css';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import {Routes,Route} from 'react-router-dom';
+import {Routes,Route,useLocation} from 'react-router-dom';
 import Home from './containers/home/Home';
 import About from './containers/about/About';
 import Portfolio from './containers/portfolio/Portfolio';
@@ -13,9 +13,13 @@ function App() {
   const handleInit = async(main)=>{
     await loadFull(main)
   }
+  const location = useLocation();
+  const renderparticle = location.pathname ==="/"
   return (
     <div className="App">
-        <Particles id='particles' options={particle} init={handleInit}/>
+        {
+          renderparticle && (<Particles id='particles' options={particle} init={handleInit}/>)
+        }
 
       <Navbar/>
 
