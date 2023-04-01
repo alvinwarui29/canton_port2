@@ -1,3 +1,6 @@
 .App{
   height: 100%;
+  &__maincontent{
+    height: calc(100% - 80px);
+  }
 }

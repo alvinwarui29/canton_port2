@@ -9,7 +9,9 @@ const Home = () => {
         <h1>
           Hello, I'm warui
           <br />
-          Front end developer and database enthusiast
+          Front end developer and 
+          <br />
+          database enthusiast
         </h1>
       </div>
     </section>
