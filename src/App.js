@@ -5,9 +5,12 @@ import About from './containers/about/About';
 import Portfolio from './containers/portfolio/Portfolio';
 import Skills from './containers/skills/Skills';
 import Resume from './containers/resume/Resume';
+import Navbar from './components/navbar/Navbar';
 function App() {
   return (
     <div className="App">
+  <Navbar/>
+
       <Routes>
         <Route index path='/' element={<Home/>}/>
         <Route index path='/about' element={<About/>}/>
