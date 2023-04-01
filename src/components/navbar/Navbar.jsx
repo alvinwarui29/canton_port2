@@ -36,9 +36,9 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <Link to={"/"} className="navbar_logo">
-          <FaLaptopCode size={30} style={{ color: "#fff" }} />
+      <div className="navbar__container">
+        <Link to={"/"} className="navbar__container__logo">
+          <FaLaptopCode size={30}  />
         </Link>
       </div>
       <ul className="navbar_menu">
