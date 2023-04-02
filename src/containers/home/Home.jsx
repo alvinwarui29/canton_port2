@@ -1,14 +1,14 @@
 import "./Home.scss";
 
 import React from "react";
-import me from "../../assets/me.jpg"
+import canton from "../../assets/canton.jpg"
 const Home = () => {
   return (
     
 
     <section className="home" id="home">
     <div className="home__left">
-      <img src={me} alt="" />
+      <img src={canton} alt="" />
     </div>
       <div className="home__textwrapper">
         <h1>
