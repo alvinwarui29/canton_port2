@@ -1,11 +1,12 @@
 import "./Home.scss";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import { Animate } from "react-simple-animate";
 import canton from "../../assets/canton.jpg";
 const Home = () => {
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate('/contact');
+    navigate("/contact");
   };
 
   return (
@@ -23,9 +24,21 @@ const Home = () => {
           database enthusiast
         </h1>
       </div>
-      <div className="home__contactme">
-        <button onClick={handleNavigate}>Contact me</button>
-      </div>
+      <Animate
+        play
+        duration={2}
+        delay={1}
+        start={{
+          transform: "translateY(550px)",
+        }}
+        end={{
+          transform: "translatex(0px)",
+        }}
+      >
+        <div className="home__contactme">
+          <button onClick={handleNavigate}>Contact me</button>
+        </div>
+      </Animate>
     </section>
   );
 };
