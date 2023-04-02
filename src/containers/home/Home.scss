@@ -41,8 +41,14 @@
             background: transparent;
             color: var(--yellow-theme-main-color);
             border: 1.5px solid var(--yellow-theme-main-color);
-            border-radius: 4px;
+            border-radius: 20px;
             font-weight: 500;
+            margin-top: 15px;
+
+            &:hover{
+                background-color: var(--yellow-theme-main-color);
+                color: #000;
+            }
         }
     }
 
