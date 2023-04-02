@@ -82,7 +82,18 @@
         }
     }
   }
-  @media screen and (min-width:421px) and (max-width:736px) {
+  @media screen and (min-width:421px) and (max-width:667px) {
+    .home__textwrapper{
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 5rem;
+        }
+    }
+    
+  }
+  @media screen and (min-width:668px) and (max-width:736px) {
     .home{
    
     &__textwrapper{
@@ -100,20 +111,20 @@
     }
   }}
   
-  @media screen and (min-width:738px) {
-    .home__textwrapper{
-        h1{
-            text-align: center;
-            font-size: 2.4rem;
-            font-weight: 900;
-            line-height: 5rem;
-        }
-    }
-    .home__contactme{
-        button{
+//   @media screen and (min-width:738px) {
+//     .home__textwrapper{
+//         h1{
+//             text-align: center;
+//             font-size: 2.4rem;
+//             font-weight: 900;
+//             line-height: 5rem;
+//         }
+//     }
+//     .home__contactme{
+//         button{
             
-        }
-    }
-  }
+//         }
+//     }
+//   }
   
   
