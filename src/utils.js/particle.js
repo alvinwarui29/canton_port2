@@ -1,8 +1,9 @@
 export default {
         
         "fullScreen": {
-            "enable": true,
-            "zIndex": 1
+            "enable": true
+            ////////
+            
         },
         "particles": {
             "number": {
