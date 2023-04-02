@@ -20,6 +20,9 @@ const Home = () => {
           database enthusiast
         </h1>
       </div>
+      <div className="home__contactme">
+        <button>Contact me</button>
+      </div>
     </section>
   );
 };
