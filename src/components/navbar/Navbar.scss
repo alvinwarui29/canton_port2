@@ -71,12 +71,14 @@
         top: 80px;
         left: -110%;
         opacity: 1;
+        background-color: #181818;
         transition: all 0.5 ease-in-out;
 
         &.active{
-            background: #181818;
+            background-color: rgba(0,0,0,1);
+            z-index: 3;
             left: 0;
-            opacity: 1;
+            
         }
         &__item{
             border-bottom: 1px solid #282828;
