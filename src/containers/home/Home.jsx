@@ -7,9 +7,10 @@ const Home = () => {
     
 
     <section className="home" id="home">
-    <div className="home__left">
+    {/* will add my image here */}
+    {/* <div className="home__left">
       <img src={canton} alt="" />
-    </div>
+    </div> */}
       <div className="home__textwrapper">
         <h1>
           Hello, I'm warui
