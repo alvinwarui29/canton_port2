@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { FaLaptopCode, FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
+
 const data = [
   {
     label: "HOME",
@@ -29,11 +30,18 @@ const data = [
     to: "/contact",
   },
 ];
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
+
   const handleClick = () => {
     setClick(!click);
   };
+
+  const handleLinkClick = () => {
+    setClick(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar__container">
@@ -44,7 +52,11 @@ const Navbar = () => {
       <ul className={`navbar__container__menu ${click ? "active" : ""}`}>
         {data.map((item, key) => (
           <li key={key} className="navbar__container__menu__item">
-            <Link to={item.to} className="navbar__container__menu__item__links">
+            <Link
+              to={item.to}
+              className="navbar__container__menu__item__links"
+              onClick={handleLinkClick}
+            >
               {item.label}
             </Link>
           </li>
