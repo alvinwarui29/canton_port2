@@ -2,13 +2,23 @@ import Header from "../../components/pageHeader/Header";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import React from "react";
 import "./About.scss";
-
+import { Animate } from "react-simple-animate";
 const About = () => {
   return (
     <section className="about" id="about">
       <Header headerText="About" 
       icon={<BsFillInfoCircleFill size={40} />} />
-
+    <Animate
+        play
+        duration={2}
+        delay={1}
+        start={{
+          transform: "translateX(-1300px)",
+        }}
+        end={{
+          transform: "translatex(0px)",
+        }}
+      >
       <div className="about__content">
         <h3>Front end developer</h3>
         <p>
@@ -18,6 +28,7 @@ const About = () => {
           management.
         </p>
       </div>
+      </Animate>
     </section>
   );
 };
