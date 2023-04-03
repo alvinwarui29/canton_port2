@@ -40,7 +40,13 @@
                     color: var(--yellow-theme-sub-text-color);
 
                 }
+                span.value{
+                    border: none;
+                }
             }
+        }
+        &__services{
+            
         }
     }
 }
