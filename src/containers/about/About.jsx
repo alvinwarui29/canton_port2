@@ -2,7 +2,7 @@ import Header from "../../components/pageHeader/Header";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import React from "react";
 import {DiNodejs} from 'react-icons/di';
-import { FaDev, FaDatabase, FaReact, FaLaravel } from "react-icons/fa";
+import { FaDev, FaDatabase, FaReact, FaLaravel,FaNodeJs } from "react-icons/fa";
 import "./About.scss";
 import { Animate } from "react-simple-animate";
 
@@ -83,7 +83,7 @@ const About = () => {
 
                 </div>
                 <div>
-                <DiNodejs size={60} color="var(--yellow-theme-main-color)"/>
+                <FaNodeJs size={60} color="var(--yellow-theme-main-color)"/>
                 </div>
                 <div>
                 <FaLaravel size={60} color="var(--yellow-theme-main-color)"/>
