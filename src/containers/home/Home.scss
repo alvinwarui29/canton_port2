@@ -37,16 +37,16 @@
             cursor: pointer;
             padding: 10px 65px;
             font-size: 2rem;
-            background: transparent;
-            color: var(--yellow-theme-main-color);
+            background-color: var(--yellow-theme-main-color);
+            color: #000;
             border: 1.5px solid var(--yellow-theme-main-color);
             border-radius: 20px;
             font-weight: 500;
             margin-top: 15px;
 
             &:hover{
-                background-color: var(--yellow-theme-main-color);
-                color: #000;
+            background: transparent;
+            color: var(--yellow-theme-main-color);
             }
         }
     }
@@ -57,7 +57,7 @@
 /* Define the keyframes for the animation */
 @keyframes typingEffect {
     from { width: 0 }
-    to { width: 60% }
+    to { width: 50% }
   }
   
   /* Apply the animation property to an element */
