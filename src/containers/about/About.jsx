@@ -51,6 +51,28 @@ const About = () => {
             management.
           </p>
         </Animate>
+        <Animate
+          play
+          duration={2}
+          delay={1}
+          start={{
+            transform: "translateX(500px)",
+          }}
+          end={{
+            transform: "translatex(0px)",
+          }}
+        >
+        <h3>Personal info</h3>
+          <ul>
+            {
+              personalInfo.map((item,i)=>(
+              <li key={i}>
+                <span className="title">{item.label} </span>
+                <span className="value">{item.value} </span>
+              </li>
+              ))}
+          </ul>
+          </Animate>
       </div>
     </section>
   );
