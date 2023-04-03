@@ -77,6 +77,17 @@ const About = () => {
           </Animate>
         </div>
         <div className="about__content__services">
+        <Animate
+            play
+            duration={2}
+            delay={1}
+            start={{
+              transform: "translateX(600px)",
+            }}
+            end={{
+              transform: "translatex(0px)",
+            }}
+          >
             <div className="about__content__services__innercontent">
                 <div>
                   <FaReact size={60} color="var(--yellow-theme-main-color)"/>
@@ -92,6 +103,7 @@ const About = () => {
                 <FaDatabase size={60} color="var(--yellow-theme-main-color)"/>
                 </div>
             </div>
+            </Animate>
 
         </div>
       </div>
