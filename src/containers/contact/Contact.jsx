@@ -5,10 +5,10 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="contact" id="contact">
+    <section className="contact" id="contact">
       <Header headerText="contact" 
       icon={<BsFillInfoCircleFill  size={40}/>} />
-    </div>
+    </section>
   )
 }
 
