@@ -13,7 +13,7 @@ const Skills = () => {
       <Header headerText="skills" icon={<BsFillInfoCircleFill size={40} />} />
       <div className="skills__content-wrapper">
         {skillData.map((item, i) => (
-          <div className="skills__content-wrapper__inner">
+          <div key={i} className="skills__content-wrapper__inner">
             <Animate
               play
               duration={1}
@@ -24,25 +24,27 @@ const Skills = () => {
               end={{
                 transform: "translateX(0px)",
               }}
+              key={i}
             >
               <h3 key={i} className="skills__content-wrapper__inner">
                 {item.label}
               </h3>
-              <div>
+              <div >
                 {item.data.map((skillitem,j)=>(
                   <AnimateKeyframes
                   play
                   duration={1}
-                  keyframes={["opacity:1","opacity:9"]}
+                  keyframes={["opacity: 1 " , "opacity : 9"]}
                   iterationCount = "1"
+                  key={j}
                   >
                   <div className="progressbar-wrapper" key={j}>
                     <p>{skillitem.skillName}</p>
                     <Line
                     percent={skillitem.percentage}
-                    strokewidth = "2"
-                    strokeColor = "var( --yellow-theme-main-color)"
-                    trailWidth = "2"
+                    strokeWidth = "2"
+                    strokeColor = "var(--yellow-theme-main-color)"
+                    trailWidth = {"2"}
                     strokeLinecap = "square"
                     />
                   </div>
