@@ -5,9 +5,20 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="about" id="about">
-      <Header headerText="About" icon={<BsFillInfoCircleFill size={40} />} />
-    </div>
+    <section className="about" id="about">
+      <Header headerText="About" 
+      icon={<BsFillInfoCircleFill size={40} />} />
+
+      <div className="about__content">
+        <h3>Front end developer</h3>
+        <p>
+          I'm able to offer top-notch, creative solutions to clients in a
+          variety of industries thanks to my keen attention to detail and
+          comprehensive understanding of front-end development and database
+          management.
+        </p>
+      </div>
+    </section>
   );
 };
 
