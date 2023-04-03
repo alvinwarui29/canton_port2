@@ -201,3 +201,19 @@
     }
 }
 
+@media screen and (min-width:737px) and (max-width:1020px) {
+    .about {
+        max-width: 100%;
+        &__content {
+            
+
+            &__services {
+                width: 100%;
+                &__innercontent{
+                margin-right: 500px;
+                }
+
+                }
+            }
+        }
+    }
