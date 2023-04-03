@@ -1,11 +1,15 @@
-import "./Header.scss"
+import "./Header.scss";
 
-import React from 'react'
+import React from "react";
 
-const Header = () => {
+const Header = (props) => {
+  const { headerText, icon } = props;
   return (
-    <div>Header</div>
-  )
-}
+    <div className="wrapper">
+      <h2>{headerText}</h2>
+      <span>{icon}</span>
+    </div>
+  );
+};
 
-export default Header
+export default Header;
