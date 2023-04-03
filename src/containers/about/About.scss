@@ -91,3 +91,42 @@
     transform: rotate(360deg);
    } 
 }
+
+@media screen and (max-width:420px) {
+    .about{
+        &__content{
+            flex-direction: column;
+            &__personal, &___services{
+                width: 100%;
+            }
+            &__services{
+                margin-top: 10px;
+                margin-left: 1px;
+                &__innercontent{
+                    width: 250px;
+                    height: 250px;
+
+                    div:nth-child(1){
+                        position: absolute;
+                        top: -10%;
+                        left: 38%;
+                    }
+                    div:nth-child(2){
+                        position: absolute;
+                        right: -12%;
+                        top: 38%;
+                    }
+                    div:nth-child(3){
+                        position: absolute;
+                        bottom: -10%;
+                        left: 38%;
+                    }
+                    div:nth-child(4){
+                        position: absolute;
+                        left: -8%;
+                        top: 38%;
+                    }
+    
+            }
+        }
+}}}
