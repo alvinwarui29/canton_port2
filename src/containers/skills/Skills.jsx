@@ -26,10 +26,10 @@ const Skills = () => {
               }}
               key={i}
             >
-              <h3 key={i} className="skills__content-wrapper__inner">
+              <h3 key={i} className="skills__content-wrapper__inner__category-text">
                 {item.label}
               </h3>
-              <div >
+              <div className="skills__content-wrapper__inner__progress-container" >
                 {item.data.map((skillitem,j)=>(
                   <AnimateKeyframes
                   play
@@ -44,7 +44,7 @@ const Skills = () => {
                     percent={skillitem.percentage}
                     strokeWidth = "2"
                     strokeColor = "var(--yellow-theme-main-color)"
-                    trailWidth = {"2"}
+                    trailWidth = "2"
                     strokeLinecap = "square"
                     />
                   </div>
