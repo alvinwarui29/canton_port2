@@ -9,6 +9,7 @@
             flex: 1;
             flex-direction: column;
             align-items: center;
+            
 
             &__category-text {
                 display: inline-block;
@@ -61,3 +62,19 @@
         }
     }
 }
+@media screen and (max-width:420px) {
+    .skills__content-wrapper__inner{
+        &__category-text{
+        font-size: 15px;
+        padding: 5px 5px;
+        justify-content: center;
+
+        &__progress-container{
+            .progressbar-wrapper{
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}}
