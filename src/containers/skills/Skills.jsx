@@ -29,7 +29,7 @@ const Skills = () => {
               <h3 key={i} className="skills__content-wrapper__inner__category-text">
                 {item.label}
               </h3>
-              <div >
+              <div className="skills__content-wrapper__inner__progress-container" >
                 {item.data.map((skillitem,j)=>(
                   <AnimateKeyframes
                   play
